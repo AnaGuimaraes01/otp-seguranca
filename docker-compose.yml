@@ -1,0 +1,16 @@
+services:
+
+  remetente:
+    build: ./remetente
+    volumes:
+      - ./compartilhado:/dados
+
+  destinatario:
+    build: ./destinatario
+    volumes:
+      - ./compartilhado:/dados
+
+  atacante:
+    build: ./atacante
+    volumes:
+      - ./compartilhado:/dados
