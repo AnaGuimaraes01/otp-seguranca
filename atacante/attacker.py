@@ -18,7 +18,7 @@ with open("/dados/mensagem.txt") as f:
     mensagem_original = f.read().strip()
 
 # Leitura da mensagem criptografada
-with open("/dados/criptografado.txt", encoding="utf-8") as f:
+with open("/dados/criptografado.txt", encoding="latin1") as f:
     criptografado = f.read()
 
 
